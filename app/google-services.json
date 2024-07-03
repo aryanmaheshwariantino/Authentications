@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "939982132428",
+    "firebase_url": "https://authentication-6f73d-default-rtdb.firebaseio.com",
+    "project_id": "authentication-6f73d",
+    "storage_bucket": "authentication-6f73d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939982132428:android:ef89019eeaade797a59e69",
+        "android_client_info": {
+          "package_name": "com.aryan.authentications"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939982132428-hlc8rsu7gg65hjvt3o7dgb7lup5ekges.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aryan.authentications",
+            "certificate_hash": "f0d9515247ef5356d42fdde40d6ddea4b142b32e"
+          }
+        },
+        {
+          "client_id": "939982132428-6g6065hahjde3n3jcsoivrq4u06evf58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvKMAEaD0MVBBTTEngLk11CbGHiwlahfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939982132428-6g6065hahjde3n3jcsoivrq4u06evf58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

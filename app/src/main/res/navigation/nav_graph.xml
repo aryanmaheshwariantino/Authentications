@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/signupFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.aryan.authentications.views.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.aryan.authentications.views.fragments.SignUpFragment"
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_signupFragment_to_otpFragment"
+            app:destination="@id/otpFragment" />
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"/>
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@+id/homeFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpFragment"
+        android:name="com.aryan.authentications.views.fragments.OTPFragment"
+        tools:layout="@layout/fragment_o_t_p" >
+        <action
+            android:id="@+id/action_otpFragment_to_verifyOtpFragment"
+            app:destination="@id/verifyOtpFragment">
+            <argument
+                android:name="verificationId"
+                app:argType="string"
+                android:defaultValue="" />
+        </action>
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyOtpFragment"
+        android:name="com.aryan.authentications.views.fragments.VerifyOTPFragment"
+        tools:layout="@layout/fragment_verify_o_t_p" >
+        <action
+            android:id="@+id/action_verifyOtpFragment_to_loginFragment"
+            app:destination="@+id/loginFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aryan.authentications.views.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_SignUpFragment"
+            app:destination="@+id/signupFragment"/>
+    </fragment>
+</navigation>

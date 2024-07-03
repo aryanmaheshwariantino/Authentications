@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Authentications</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id" translatable="false">939982132428-hlc8rsu7gg65hjvt3o7dgb7lup5ekges.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">1542579169674097</string>
+</resources>
