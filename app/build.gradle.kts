@@ -96,5 +96,11 @@ dependencies {
     // google maps
     implementation (libs.play.services.maps)
 
+    // dotenv
+    implementation(libs.java.dotenv)
+
+    //Push Notification
+    implementation (libs.firebase.messaging)
+
 
 }

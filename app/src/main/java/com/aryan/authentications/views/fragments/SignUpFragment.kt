@@ -59,6 +59,7 @@ class SignUpFragment : Fragment() {
 
 
         firebaseAuth = (requireActivity() as MainActivity).getFirebaseAuth()
+        firebaseAnalytics = (requireActivity() as MainActivity).getFirebaseAnalytics()
         firebaseCrashlytics = (requireActivity() as MainActivity).getFirebaseCrashlytics()
 
         callbackManager = CallbackManager.Factory.create()
@@ -168,7 +169,7 @@ class SignUpFragment : Fragment() {
                 if (task.isSuccessful) {
                     Log.d(TAG, "signInWithCredential:success")
                     Toast.makeText(context, "Google Sign-In successful!", Toast.LENGTH_SHORT).show()
-                    findNavController().navigate(R.id.action_signupFragment_to_homeFragment)
+                    findNavController().navigate(R.id.action_signupFragment_to_orderFragment)
                 } else {
                     Log.w(TAG, "signInWithCredential:failure", task.exception)
                     Toast.makeText(context, "Authentication Failed.", Toast.LENGTH_SHORT).show()

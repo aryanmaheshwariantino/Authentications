@@ -14,6 +14,9 @@
         <action
             android:id="@+id/action_loginFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
     </fragment>
 
     <fragment
@@ -29,6 +32,9 @@
         <action
             android:id="@+id/action_signupFragment_to_homeFragment"
             app:destination="@+id/homeFragment"/>
+        <action
+            android:id="@+id/action_signupFragment_to_orderFragment"
+            app:destination="@+id/orderFragment"/>
     </fragment>
 
     <fragment
@@ -62,4 +68,12 @@
             android:id="@+id/action_homeFragment_to_SignUpFragment"
             app:destination="@+id/signupFragment"/>
     </fragment>
+
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.aryan.authentications.views.fragments.OrderFragment"
+        tools:layout="@layout/fragment_order"/>
+    <action
+        android:id="@+id/action_orderFragment_to_homeFragment"
+        app:destination="@+id/homeFragment"/>
 </navigation>

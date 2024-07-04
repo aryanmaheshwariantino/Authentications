@@ -36,7 +36,7 @@ class LoginFragment : Fragment() {
 
         (activity as? AppCompatActivity)?.supportActionBar?.title = "Login"
 
-        // Retrieve FirebaseAuth instance from MainActivity
+        // Retrieve instances from MainActivity
         firebaseAuth = (requireActivity() as MainActivity).getFirebaseAuth()
         firebaseAnalytics = (requireActivity() as MainActivity).getFirebaseAnalytics()
         firebaseCrashlytics = (requireActivity() as MainActivity).getFirebaseCrashlytics()
@@ -84,7 +84,7 @@ class LoginFragment : Fragment() {
                         if (task.isSuccessful) {
                             Log.d("aryan", "Login successful")
                             // Navigate to Home screen
-                            findNavController().navigate(R.id.action_loginFragment_to_homeFragment)
+                            findNavController().navigate(R.id.action_loginFragment_to_orderFragment)
                         } else {
                             val exception = task.exception
                             Log.w("aryan", "Login failed", exception)

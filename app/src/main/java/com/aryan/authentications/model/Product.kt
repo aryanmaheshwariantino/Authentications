@@ -1,7 +1,5 @@
 package com.aryan.authentications.model
 
-import android.widget.ImageView
-
 data class ProductResponse(
     val status: String,
     val request_id: String,
