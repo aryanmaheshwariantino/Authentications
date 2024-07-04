@@ -54,6 +54,7 @@ class OrderFragment : Fragment() {
         firebaseAnalytics = (requireActivity() as MainActivity).getFirebaseAnalytics()
         firebaseCrashlytics = (requireActivity() as MainActivity).getFirebaseCrashlytics()
 
+
         binding.btnPlaceOrder.setOnClickListener {
             if (checkNotificationPermission()) {
                 sendNotification()
